@@ -615,19 +615,19 @@
   input[type=submit].twitter:after {
     background: #2c8dd0;
   }
-  .store-selector {
+  .store-picker {
     background: #fff;
     max-width: 500px;
     margin: 50px auto;
     padding: 2rem;
     border: 2px solid #000;
   }
-  .store-selector input,
-  .store-selector button {
+  .store-picker input,
+  .store-picker button {
     width: 100%;
   }
-  .store-selector input[type="text"],
-  .store-selector button[type="text"] {
+  .store-picker input[type="text"],
+  .store-picker button[type="text"] {
     text-align: center;
     font-size: 3rem;
   }
