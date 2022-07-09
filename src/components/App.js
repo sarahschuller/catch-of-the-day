@@ -17,6 +17,10 @@ class App extends React.Component {
         this.setState({ fishes });
     };
 
+    loadSampleFishes = () => {
+        alert('Loading Sample');
+    }
+
     render() {
         return (
             <div className="catch-of-the-day">
@@ -24,7 +28,10 @@ class App extends React.Component {
                     <Header tagline="Fresh Seafood Market" />
                 </div>
                 <Order />
-                <Inventory addFish={this.addFish} />
+                <Inventory 
+                addFish={this.addFish} 
+                loadSampleFishes = {this.loadSampleFishes}
+                />
             </div>
         )
     }
