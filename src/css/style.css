@@ -622,6 +622,7 @@
     padding: 2rem;
     border: 2px solid #000;
   }
+
   .store-picker input,
   .store-picker button {
     width: 100%;
@@ -630,4 +631,64 @@
   .store-picker button[type="text"] {
     text-align: center;
     font-size: 3rem;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 600px) {
+    header.top h1 {
+      font-size: 3rem;
+    }
+    header.top h1 .ofThe {
+      font-size: 2rem;
+      background-size: 20px;
+    }
+    .catch-of-the-day {
+      flex-direction: column;
+    }
+    .order-wrap {
+      height: 100vh;
+      border-bottom: 2px solid #000;
+      border-top: 1px solid #000;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      margin-bottom: 5px;
+    }
+    .menu-fish {
+      border-bottom: 2px solid #000;
+      border-top: 1px solid #000;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      margin-bottom: 5px;
+      clear: both;
+      overflow: hidden;
+    }
+    .menu-fish p {
+      font-size: 1.4rem;
+    }
+    .menu-fish .fish-name {
+      margin: 1rem;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+              align-items: center;
+    }
+    .menu-fish .price {
+      font-size: 1.4rem;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+    }
+    .menu-fish img {
+      float: left;
+      width: 120px;
+      margin-right: 1rem;
+    }
+    
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    header.top h1 {
+      font-size: 5rem;
+    }
+    
   }
