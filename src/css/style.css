@@ -640,7 +640,6 @@
     header.top h1 .ofThe {
       font-size: 3rem;
       background-size: 30px;
-      justify-content: space-between;
     }
     .catch-of-the-day {
       flex-direction: column;
@@ -690,6 +689,42 @@
   @media screen and (min-width: 600px) and (max-width: 900px) {
     header.top h1 {
       font-size: 5rem;
+    }
+    header.top h1 .ofThe {
+      font-size: 3rem;
+      background-size: 30px;
+    }
+    .menu-fish {
+      border-bottom: 2px solid #000;
+      border-top: 1px solid #000;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      margin-bottom: 5px;
+      clear: both;
+      overflow: hidden;
+    }
+    .menu-fish p {
+      font-size: 1.4rem;
+    }
+    .menu-fish .fish-name {
+      margin: 1rem;
+      font-size: 1rem;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+              align-items: center;
+    }
+    .menu-fish .price {
+      font-size: 1rem;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+    }
+    .menu-fish img {
+      float: left;
+      width: 100px;
+      margin-right: 1rem;
     }
     
   }
