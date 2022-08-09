@@ -23,7 +23,8 @@ class App extends React.Component {
       context: this,
       state: 'fishes',
     });
-  }
+    
+  };
 
   componentDidUpdate() {
     localStorage.setItem(this.props.match.params.storeId, JSON.stringify(this.state.order));
@@ -82,6 +83,12 @@ class App extends React.Component {
     this.setState({ order });
   };
 
+  deleteOrder = (key) => {
+    const order = {...this.state.order };
+    order[key] = null;
+    this.setState({ order });
+  }
+
   render() {
     return (
       <div className="catch-of-the-day">
@@ -102,6 +109,7 @@ class App extends React.Component {
           fishes={this.state.fishes}
           order={this.state.order}
           removeFromOrder={this.removeFromOrder}
+          deleteOrder={this.deleteOrder}
         />
         <Inventory
           addFish={this.addFish}
