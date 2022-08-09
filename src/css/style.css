@@ -705,10 +705,12 @@
     }
     .menu-fish p {
       font-size: 1.4rem;
+      margin-top: 1.5rem;
     }
     .menu-fish .fish-name {
       margin: 1rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      text-decoration: underline;
       display: -webkit-box;
       display: flex;
       -webkit-box-pack: justify;
@@ -717,13 +719,13 @@
               align-items: center;
     }
     .menu-fish .price {
-      font-size: 1rem;
+      font-size: 1.4rem;
       -webkit-box-pack: end;
               justify-content: flex-end;
     }
     .menu-fish img {
       float: left;
-      width: 100px;
+      width: 120px;
       margin-right: 1rem;
     }
     
