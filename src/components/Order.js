@@ -78,9 +78,6 @@ class Order extends React.Component {
         <div className="total">
           Total:
           <strong>{formatPrice(total)}</strong>
-          <button onClick={() => this.props.deleteOrder(orderIds)}>
-                  &times;
-            </button>
         </div>
       </div>
     );
