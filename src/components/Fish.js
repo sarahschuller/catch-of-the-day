@@ -22,8 +22,8 @@ class Fish extends React.Component {
         <img src={image} alt={name} />
         <h3 className="fish-name">
           {name}
-          <span className="price">{formatPrice(price)}</span>
         </h3>
+        <span className="price">{formatPrice(price)}</span>
         <p>{desc}</p>
         <button
           disabled={!isAvailable}
