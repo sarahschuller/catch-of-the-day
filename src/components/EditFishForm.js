@@ -14,7 +14,7 @@ class EditFishForm extends React.Component {
     updateFish: PropTypes.func
   };
   handleChange = e => {
-    console.log(e.currentTarget.value);
+    // console.log(e.currentTarget.value);
     // update that fish
     // 1. Take a copy of the curernt fish
     const updatedFish = {
