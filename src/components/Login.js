@@ -12,9 +12,9 @@ const Login = (props) => (
         </button>
 
         <button 
-        className="twitter" 
-        onClick={() => props.authenticate('Twitter')}>
-            Log in with Twitter
+        className="google" 
+        onClick={() => props.authenticate('Google')}>
+            Log in with Google
         </button>
     </nav>
 );
